@@ -1,0 +1,166 @@
+.container{
+  padding: 2% 30%;
+  text-align: center;
+
+}
+.main{
+  width: 100%;
+  min-height: 500px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.box{
+  width: 100%;
+  min-height: 200px;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.post-likes, .post-comments , .post-send{
+  padding:5px;
+}
+.post-footer{
+  min-height: 30px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+.like_icon{
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+body {
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
+}
+.app {
+  background-color: #fafafa;
+}
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  border-bottom: 1px solid lightgray;
+}
+.app__headerWrapper {
+  max-width: 975px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__headerButtons {
+  display: flex;
+  column-gap: 15px;
+}
+button {
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.primary__button {
+  background-color: #0095f6;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 9px;
+  font-weight: 600;
+  text-align: center;
+}
+.text__button {
+  color: #0095f6;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: transparent;
+}
+.app__signUp {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0;
+  row-gap: 15px;
+}
+
+.comment_icon, .like_icon{
+  width: 30px;
+  height: 27px;
+}
+
+.post-comments, .post-likes{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.post-comments > span {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.post-likes > span{
+  margin-left: 8px;
+  font-size: 18px;
+}
+.post-comments > ul {
+  width: 88%;
+}
+
+.post-comments > ul > li {
+  list-style: none;
+  background: aliceblue;
+  margin-bottom: 2px;
+  border-bottom: 1px solid;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.delete_comment{
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+.post__form{
+  display:flex;
+  margin-top: 20px;
+
+}
+.post__input{
+  flex: 2;
+}
+.like_icon_big{
+  height: 100px;
+  width: 100px;
+  background-image: url(./image/like_red.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
